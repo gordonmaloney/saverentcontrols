@@ -1,0 +1,1 @@
+export const  axiosURL = 'https://redalertbackend.vercel.app/data'

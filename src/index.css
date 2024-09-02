@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue'), url('./fonts/Bebas\ Neue.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Roboto";
+    background-image: url('https://raw.githubusercontent.com/gordonmaloney/lr-tweeter/main/src/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+}
+
+.bodyFilter {
+    height: 100vh;
+    background-color: rgba(173, 202, 188, 0.7);
+    backdrop-filter: grayscale(80%) brightness(200%) blur(5px);
+}
+
+b {
+    font-weight: 800;
+}
+
+h1, h2 {
+    font-family: "Bebas Neue";
+    margin: 0;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.header {
+    background-color: rgb(9, 124, 53);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    max-width: calc(100vw - 20px)
+}
+
+#bodyFrame {
+   width: 90%;
+   background-color: rgba(0, 66, 25, 0.8);
+   margin: 0 auto;
+   border-radius: 10px;
+   max-width: 1200px;
+}
+
+.frameBox {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    height: calc(100% - 50px);
+    width: calc(100%-50px);
+}
+
+@media only screen and (max-width: 599px) {
+    #bodyFrame {
+        width: 100%;
+        border-radius: 0px;
+     }
+  }
+
